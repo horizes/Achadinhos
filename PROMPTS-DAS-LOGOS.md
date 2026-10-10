@@ -1,10 +1,18 @@
 # Logos dos planos
 
-As versões atuais são as três logos fornecidas pelo usuário: BLACK preta e dourada, TOP laranja e dourada e BLUE azul com aro laranja e letras grandes, sem monograma de prédios. Foram reaproveitados os PNGs com fundo externo transparente já disponíveis no projeto. Nenhuma nova geração foi necessária nesta substituição.
+## TOP — correção do recorte
+
+O recorte da TOP foi refeito a partir do JPEG original para corrigir as falhas de transparência no interior e os resíduos no contorno. Ferramenta: ImageGen integrada. O PNG foi salvo também em `logo-top-limpa.png`, junto ao ZIP do site.
+
+Prompt utilizado:
+
+Use case: background-extraction. Edit target: the supplied original TOP logo. Produce a precise clean cutout of this exact circular medallion for use in website plan cards. Remove the white square exterior completely; every pixel outside the outer black-and-gold circular rim must have genuine alpha transparency. The previous cutout had scattered thin jagged ghost outlines and isolated flecks around its edge: remove ALL such exterior rings, ghost lines, fragments, halos, light pixels, and stray pixels, and provide one smooth clean continuous outer contour. Preserve the exact original orange interior, metallic gold-and-black ring, T and architectural buildings monogram, large serif TOP letters, divider with central dot, and exact caption ACHADINHOS DO CONDOMÍNIO. Interior remains fully opaque everywhere, including inside letters and buildings: no transparent holes, no checkerboard artifacts or cutouts in the medallion. Preserve original text, original colors, geometry, proportions and composition. No redesign or extra elements. Only the solid circular logo with a small even transparent margin, no exterior shadow, clean antialiased edge, no cropping.
+
+As versões atuais são as três logos fornecidas pelo usuário: BLACK preta e dourada, TOP laranja e dourada e BLUE azul com aro laranja e letras grandes, sem monograma de prédios. BLUE e BLACK usam os PNGs transparentes disponíveis no projeto. O recorte da TOP foi refeito conforme o prompt acima.
 
 ## TOP — versão atual laranja e dourada
 
-Nova logo fornecida em Top.jpeg. Fundo branco externo removido com ImageGen integrada, mantendo o interior laranja e o monograma dourado. Arquivo aplicado: `assets/plano-top.png`.
+Nova logo fornecida em Top.jpeg. Fundo branco externo removido com ImageGen integrada, mantendo o interior laranja e o monograma dourado. Arquivo aplicado: `assets/plano-top-2743cb2341a5.png`.
 
 Precise background removal, edit the supplied new TOP plan logo only. Remove the white exterior background everywhere OUTSIDE the outer circular gold-and-black rim and make those exterior pixels genuinely alpha transparent. Preserve the whole original circular medallion without redesign: vivid solid orange opaque interior, golden T-and-buildings architectural monogram, all golden outlines, original shadows and beveled metallic lettering, TOP in large elegant serif letters, horizontal divider lines with central golden dot, exact bottom caption ACHADINHOS DO CONDOMÍNIO including the accent. Do not change the orange interior color, gold colors, typography, layout, proportions, original shapes, words or monogram. Keep orange background INSIDE the circle fully opaque. Entire circle visible with a small even transparent margin, no cropped edges, no exterior drop shadow, no stray pixels. Output a single clean transparent PNG logo, no mockup, no checkerboard pattern, no white/black square backdrop.
 
@@ -14,7 +22,7 @@ Recoloração da logo original criada para o plano BLUE, preservando o monograma
 
 Precise logo recoloring. Image 1 is the edit target: our original BLUE plan circular medallion with the B-and-skyscrapers monogram, large serif BLUE lettering, divider with central dot, and bottom caption ACHADINHOS DO CONDOMÍNIO. Image 2 is a color palette reference ONLY, not a replacement layout. Preserve the original target's design, shapes, composition, monogram, buildings, all exact text, serif fonts and relative positions. Apply the vivid blue and orange color family of image 2: opaque rich royal-blue to deep navy blue interior; glossy orange outer double circular rings based on #EE6810 instead of gold; orange metallic architectural B/skyscrapers monogram and curved baseline; large BLUE serif letters in vivid electric royal blue with beveled light blue edges and dark navy extrusion so the word remains clearly readable; orange divider lines, central dot and exact caption ACHADINHOS DO CONDOMÍNIO. Preserve the premium embossed 3D finish and detailed lighting; use orange reflections rather than yellow-gold. Do not copy the simpler layout or sans-serif typography of reference 2. Output one clean complete circular logo with genuine alpha transparency everywhere outside the outer rim, preserve an opaque blue interior, remove any stray colored pixels outside the circle, no exterior drop shadow, small even transparent margin on all sides, no clipping. No mockup, no square black/white background, no checkerboard. Color change only to our original design.
 
-Ferramenta utilizada: ImageGen integrada, com fundo transparente. As imagens finais estão em `assets/plano-black.png`, `assets/plano-top.png` e `assets/plano-blue.png`.
+Ferramenta utilizada: ImageGen integrada, com fundo transparente. As imagens finais estão em `assets/plano-black-b246eeca9d5e.png`, `assets/plano-top-2743cb2341a5.png` e `assets/plano-blue-3bee747f44aa.png`.
 
 ## BLACK — remoção do fundo
 

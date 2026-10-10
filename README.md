@@ -24,16 +24,16 @@ Os valores deste protótipo ficam **somente neste navegador**. A sincronização
 
 ## Logos
 
-- `assets/plano-top.png`: nova logo TOP fornecida pelo usuário, com interior laranja e monograma dourado; fundo branco externo removido.
-- `assets/plano-black.png`: logo fornecida, com o fundo exterior removido.
-- `assets/plano-blue.png`: logo BLUE fornecida pelo usuário, com letras azuis e aro laranja; fundo preto externo removido.
+- `assets/plano-top-2743cb2341a5.png`: nova logo TOP fornecida pelo usuário, com interior laranja e monograma dourado; fundo branco externo removido.
+- `assets/plano-black-b246eeca9d5e.png`: logo fornecida, com o fundo exterior removido.
+- `assets/plano-blue-3bee747f44aa.png`: logo BLUE fornecida pelo usuário, com letras azuis e aro laranja; fundo preto externo removido.
 - As três imagens têm transparência real fora do medalhão; o interior de cada logo foi mantido opaco.
 - As logos aparecem nos planos do cadastro e nos cartões de administração.
-- Foram reaproveitadas as versões transparentes das três logos enviadas. O histórico de edição está em `PROMPTS-DAS-LOGOS.md`.
+- As logos enviadas estão no cadastro e no admin. O recorte da TOP foi refeito para corrigir falhas de transparência no interior e resíduos externos. Os arquivos das imagens têm nomes novos e o script do admin inclui uma versão na URL para evitar o cache das versões anteriores. O histórico de edição está em `PROMPTS-DAS-LOGOS.md`.
 
 ## Atualizar no GitHub Pages
 
-Extraia o ZIP e substitua os arquivos no repositório pelo conteúdo do pacote, incluindo `demo.js` e as imagens em `assets/`. O `index.html` deve ficar na raiz. O site continua sem etapa de build. Caso o navegador mostre a versão antiga, atualize a página sem usar o cache.
+Extraia o ZIP e substitua os arquivos no repositório pelo conteúdo do pacote, incluindo `demo.js` e as imagens em `assets/`. O `index.html` deve ficar na raiz. O site continua sem etapa de build. Substitua também `admin.html` e `admin.js`. Após a publicação terminar, reabra `admin.html` e use Ctrl+F5 para atualizar a página.
 
 O CNPJ fixo de pagamento continua como `00.000.000/0000-00`.
 

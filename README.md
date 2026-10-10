@@ -24,12 +24,12 @@ Os valores deste protótipo ficam **somente neste navegador**. A sincronização
 
 ## Logos
 
-- `assets/plano-top.png`: logo fornecida, com o fundo exterior removido.
+- `assets/plano-top.png`: nova logo TOP fornecida pelo usuário, com interior laranja e monograma dourado; fundo branco externo removido.
 - `assets/plano-black.png`: logo fornecida, com o fundo exterior removido.
-- `assets/plano-blue.png`: nova logo em azul e dourado, seguindo o padrão das outras duas.
+- `assets/plano-blue.png`: logo BLUE fornecida pelo usuário, com letras azuis e aro laranja; fundo preto externo removido.
 - As três imagens têm transparência real fora do medalhão; o interior de cada logo foi mantido opaco.
 - As logos aparecem nos planos do cadastro e nos cartões de administração.
-- Ferramenta usada: ImageGen integrada. Os prompts completos estão em `PROMPTS-DAS-LOGOS.md`.
+- Foram reaproveitadas as versões transparentes das três logos enviadas. O histórico de edição está em `PROMPTS-DAS-LOGOS.md`.
 
 ## Atualizar no GitHub Pages
 

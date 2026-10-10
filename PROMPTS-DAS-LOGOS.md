@@ -1,15 +1,29 @@
 # Logos dos planos
 
+As versões atuais são as três logos fornecidas pelo usuário: BLACK preta e dourada, TOP laranja e dourada e BLUE azul com aro laranja e letras grandes, sem monograma de prédios. Foram reaproveitados os PNGs com fundo externo transparente já disponíveis no projeto. Nenhuma nova geração foi necessária nesta substituição.
+
+## TOP — versão atual laranja e dourada
+
+Nova logo fornecida em Top.jpeg. Fundo branco externo removido com ImageGen integrada, mantendo o interior laranja e o monograma dourado. Arquivo aplicado: `assets/plano-top.png`.
+
+Precise background removal, edit the supplied new TOP plan logo only. Remove the white exterior background everywhere OUTSIDE the outer circular gold-and-black rim and make those exterior pixels genuinely alpha transparent. Preserve the whole original circular medallion without redesign: vivid solid orange opaque interior, golden T-and-buildings architectural monogram, all golden outlines, original shadows and beveled metallic lettering, TOP in large elegant serif letters, horizontal divider lines with central golden dot, exact bottom caption ACHADINHOS DO CONDOMÍNIO including the accent. Do not change the orange interior color, gold colors, typography, layout, proportions, original shapes, words or monogram. Keep orange background INSIDE the circle fully opaque. Entire circle visible with a small even transparent margin, no cropped edges, no exterior drop shadow, no stray pixels. Output a single clean transparent PNG logo, no mockup, no checkerboard pattern, no white/black square backdrop.
+
+## BLUE — versão anterior com monograma em azul e laranja
+
+Recoloração da logo original criada para o plano BLUE, preservando o monograma B e os prédios. Referência de cores: Blue.jpeg fornecida pelo usuário. Ferramenta: ImageGen integrada, com transparência externa. Esta versão foi substituída pela logo BLUE fornecida.
+
+Precise logo recoloring. Image 1 is the edit target: our original BLUE plan circular medallion with the B-and-skyscrapers monogram, large serif BLUE lettering, divider with central dot, and bottom caption ACHADINHOS DO CONDOMÍNIO. Image 2 is a color palette reference ONLY, not a replacement layout. Preserve the original target's design, shapes, composition, monogram, buildings, all exact text, serif fonts and relative positions. Apply the vivid blue and orange color family of image 2: opaque rich royal-blue to deep navy blue interior; glossy orange outer double circular rings based on #EE6810 instead of gold; orange metallic architectural B/skyscrapers monogram and curved baseline; large BLUE serif letters in vivid electric royal blue with beveled light blue edges and dark navy extrusion so the word remains clearly readable; orange divider lines, central dot and exact caption ACHADINHOS DO CONDOMÍNIO. Preserve the premium embossed 3D finish and detailed lighting; use orange reflections rather than yellow-gold. Do not copy the simpler layout or sans-serif typography of reference 2. Output one clean complete circular logo with genuine alpha transparency everywhere outside the outer rim, preserve an opaque blue interior, remove any stray colored pixels outside the circle, no exterior drop shadow, small even transparent margin on all sides, no clipping. No mockup, no square black/white background, no checkerboard. Color change only to our original design.
+
 Ferramenta utilizada: ImageGen integrada, com fundo transparente. As imagens finais estão em `assets/plano-black.png`, `assets/plano-top.png` e `assets/plano-blue.png`.
 
 ## BLACK — remoção do fundo
 
 Edit target: supplied BLACK plan logo. Remove only the exterior background outside the outer circular golden rim, including all white square corners, the thin black rectangular edge and any exterior cast shadow. Output a clean tightly framed circular PNG with genuine alpha transparency outside the circle. Preserve the entire original circular medallion exactly: opaque black textured interior, metallic gold double rim, large B monogram with buildings, BLACK lettering, small divider, and exact text ACHADINHOS DO CONDOMÍNIO. Do not redraw, change proportions, spelling, colors, illumination, or interior details. This is a precise background-removal cutout for a website plan card. No fake checkerboard, no white background.
 
-## TOP — remoção do fundo
+## TOP — versão anterior com interior azul-marinho, remoção do fundo
 
 Edit target: supplied TOP plan logo. Remove only the exterior background outside the circular outer gold rim, including all navy square corners and any exterior shadow. Output a tightly framed circular PNG with genuine alpha transparency outside the circle. Preserve the entire original circular medallion exactly: opaque dark navy textured interior, metallic golden double ring, stylized T monogram and buildings, TOP lettering and exact small caption ACHADINHOS DO CONDOMÍNIO. Keep original proportions, text, colors and interior details. No redesign. No fake checkerboard or opaque backdrop. Precise background-removal cutout for a website plan card.
 
-## BLUE — criação no mesmo padrão
+## BLUE — logo fornecida, remoção do fundo
 
-Create one new BLUE plan logo for ACHADINHOS DO CONDOMÍNIO, using supplied TOP and BLACK medallions as style references only. Match the same premium circular medallion logo system: polished metallic gold double circular rim with fine inner gold ring, elegant beveled serif lettering, central architectural monogram combining a prominent B with three stylized skyscrapers and curved baseline, engraved metallic gold reflections and subtle texture. The interior of the medallion is opaque deep royal blue, visibly bluer than the TOP navy version, with subtle rich texture. Below the monogram, large exact text: BLUE. Below BLUE, thin horizontal golden lines with a small golden central dot. At the bottom, exact caption: ACHADINHOS DO CONDOMÍNIO. Balanced centered composition, same visual hierarchy and styling as both reference logos, readable text, no additional words. Entire circular badge in frame with a small consistent margin. All area outside the outer circular rim must be genuine alpha transparency; keep blue interior opaque. Single isolated logo PNG, no mockup, no white background, no fake checkerboard.
+Versão atual: logo BLUE fornecida, com interior azul, letras azuis e aro e legenda laranja. Foi reaproveitado o PNG transparente disponível no projeto. O prompt original de remoção do fundo dessa versão não foi registrado.

@@ -25,7 +25,7 @@
     plans = data.plans; revision = data.revision;
     Object.entries(plans).forEach(([id, plan]) => { const available = plan.active && Number.isSafeInteger(plan.annualCents); document.querySelector(`[data-price="${id}"]`).textContent = available ? C.money(plan.annualCents) : "Indisponível"; document.querySelector(`[data-installments="${id}"]`).textContent = available ? C.installments(plan.annualCents) : "Consulte nossa equipe"; form.querySelector(`input[value="${id}"]`).disabled = !available; });
     summary();
-    if (!Object.values(plans).some(plan => plan.active && Number.isSafeInteger(plan.annualCents))) notice("Os planos estão sendo atualizados. Fale com nossa equipe para concluir sua adesão.");
+    if (!Object.values(plans).some(plan => plan.active && Number.isSafeInteger(plan.annualCents))) notice(window.ACHADINHOS_CONFIG.demoMode?"Os valores dos planos de teste ainda não foram definidos.":"Os planos estão sendo atualizados. Fale com nossa equipe para concluir sua adesão.");
     else notice("");
   }
   async function loadPlans() {
@@ -72,7 +72,7 @@
   });
   $("remove-logo").addEventListener("click", () => { logoVersion++; logo = null; $("logo").value = ""; $("logo-info").hidden = true; $("logo-preview").removeAttribute("src"); $("logo-name").textContent = "Clique para anexar arquivo"; submission = null; });
   async function copy(text, feedback) { try { await navigator.clipboard.writeText(text); toast(feedback); } catch { toast("Não foi possível copiar automaticamente. Selecione e copie o texto."); } }
-  $("copy-pix").addEventListener("click", () => copy("65106497000172","Chave PIX copiada."));
+  $("copy-pix").addEventListener("click", () => copy("00000000000000","Chave PIX copiada."));
   function point(event) { const r = canvas.getBoundingClientRect(); return { x:(event.clientX-r.left)*canvas.width/r.width, y:(event.clientY-r.top)*canvas.height/r.height }; }
   canvas.addEventListener("pointerdown", event => { if (busy || event.button > 0) return; event.preventDefault(); drawing=true; lastPoint=point(event); canvas.setPointerCapture(event.pointerId); ctx.beginPath(); ctx.moveTo(lastPoint.x,lastPoint.y); });
   canvas.addEventListener("pointermove", event => { if (!drawing) return; const p=point(event); strokeLength += Math.hypot(p.x-lastPoint.x,p.y-lastPoint.y); ctx.lineTo(p.x,p.y); ctx.stroke(); lastPoint=p; signed=strokeLength>40; $("signature-hint").hidden = true; $("signature-error").textContent=""; submission=null; });
@@ -112,5 +112,9 @@
     try{const pdf=await API.call("receipt",{id:result.receiptId,key:result.downloadKey});const binary=atob(pdf.base64),bytes=Uint8Array.from(binary,c=>c.charCodeAt(0));const url=URL.createObjectURL(new Blob([bytes],{type:"application/pdf"}));const a=document.createElement("a");a.href=url;a.download=pdf.name;a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);}catch(error){$("download-error").textContent=error.message;}finally{button.disabled=false;}
   });
   if(window.top!==window.self){document.body.textContent="Abra este formulário diretamente pelo link de cadastro.";return;}
+  if(window.ACHADINHOS_CONFIG.demoMode){
+    const banner=document.createElement("div");banner.className="demo-banner";banner.setAttribute("role","status");banner.textContent="MODO DE TESTE • Este formulário não envia cadastros nem e-mails.";document.querySelector("main").prepend(banner);
+    window.addEventListener("storage",event=>{if(event.key==="achadinhos-test-plans-v1")loadPlans();});
+  }
   loadPlans();
 })();

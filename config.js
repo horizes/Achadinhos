@@ -1,5 +1,6 @@
 /* Configuração pública. Nunca coloque senha, token de e-mail ou credenciais aqui. */
 window.ACHADINHOS_CONFIG = Object.freeze({
+  demoMode: true, // Teste com senha 123456. Desative ao configurar o servidor real.
   apiUrl: "", // Cole aqui a URL /exec do Google Apps Script depois de ativá-lo.
   siteUrl: "", // Opcional: https://SEU-USUARIO.github.io/SEU-REPOSITORIO/
   whatsapp: "5519993882224",

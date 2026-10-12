@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cadastre sua empresa no Achadinhos do Condomínio. Escolha seu plano, conheça as condições e assine sua adesão.">
+  <meta name="theme-color" content="#011743"><title>Cadastro e adesão | Achadinhos do Condomínio</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css?v=20261011-pages1">
+  <script src="./config.js?v=20261011-pages1" defer></script><script src="./core.js?v=20261011-pages1" defer></script><script src="./api.js?v=20261011-pages1" defer></script><script src="./demo.js?v=20261011-pages1" defer></script><script src="./app.js?v=20261011-pages1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o formulário</a>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="topline"><span>UMA REDE DE BOAS CONEXÕES</span><a href="https://wa.me/5519993882224" target="_blank" rel="noopener noreferrer">Precisa de ajuda? <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-content">
+        <div class="brand-mark" role="img" aria-label="Logotipo Achadinhos do Condomínio"><img src="./assets/logo-transparente.png" alt="" width="1254" height="1254"></div>
+        <div class="hero-title"><p class="eyebrow">ACHADINHOS DO CONDOMÍNIO</p><h1>FORMULÁRIO DE CADASTRO<br><span>E TERMO DE ADESÃO</span></h1><p>Sua empresa mais perto dos condomínios.</p></div>
+        <svg class="skyline" viewBox="0 0 330 190" aria-hidden="true"><path d="M5 185V95h45v90M60 185V45h65v140M73 45V28h38v17M138 185V82h47v103M197 185V16h75v169M213 16V4h42v12M286 185v-70h40v70M0 186h330"/><path d="M18 110h18m-18 22h18m-18 22h18M77 62h13m10 0h13M77 85h13m10 0h13M77 108h13m10 0h13M77 131h13m10 0h13M77 154h13m10 0h13M151 100h20m-20 24h20m-20 24h20M213 37h14m14 0h14M213 61h14m14 0h14M213 85h14m14 0h14M213 109h14m14 0h14M213 133h14m14 0h14M213 157h14m14 0h14M299 135h14m-14 23h14"/></svg>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <section class="welcome"><div class="welcome-icon" aria-hidden="true">✦</div><div><h2>Seja muito bem-vindo(a)!</h2><p>Conectamos síndicos e administradoras aos melhores fornecedores do mercado. Preencha seus dados, escolha o plano e faça parte dessa rede.</p></div><span class="welcome-tag">VAMOS COMEÇAR</span></section>
+    <nav class="steps" aria-label="Etapas do cadastro"><button type="button" id="step-one" class="step active" aria-current="step"><span class="step-number">01</span><span>Cadastro e contratação<small>Empresa, plano e pagamento</small></span></button><span class="step-line" aria-hidden="true"></span><button type="button" id="step-two" class="step" disabled><span class="step-number">02</span><span>Termo e aceite<small>Condições e assinatura</small></span></button></nav>
+    <div id="service-notice" class="notice" role="status" hidden></div>
+    <div class="layout" id="form-layout">
+      <form id="registration" novalidate>
+        <div id="page-one">
+          <p class="page-label">PÁGINA 1 <span>CADASTRO E CONTRATAÇÃO</span></p>
+          <section class="section-card"><div class="section-heading"><span>1</span><h2>DADOS DA EMPRESA</h2></div><div class="section-body">
+            <p class="field-note">Campos com <span class="required">*</span> são obrigatórios.</p>
+            <div class="field-grid">
+              <label>Razão social <span class="required">*</span><input name="razaoSocial" required maxlength="180" autocomplete="organization" placeholder="Razão social da empresa"></label>
+              <label>Nome fantasia <span class="required">*</span><input name="nomeFantasia" required maxlength="120" placeholder="Como sua empresa é conhecida"></label>
+              <label>CNPJ <span class="required">*</span><input name="cnpj" required maxlength="18" placeholder="00.000.000/0000-00" autocomplete="off" spellcheck="false"></label>
+              <label>Segmento de atuação <span class="required">*</span><input name="segmento" required maxlength="100" placeholder="Ex.: manutenção, limpeza, segurança"></label>
+              <label class="full">Endereço completo <span class="required">*</span><input name="endereco" required maxlength="250" autocomplete="street-address" placeholder="Rua, número, complemento, bairro e CEP"></label>
+              <label>Cidade <span class="required">*</span><input name="cidade" required maxlength="100" autocomplete="address-level2" placeholder="Sua cidade"></label>
+              <label>Estado <span class="required">*</span><select name="estado" required autocomplete="address-level1"><option value="">Selecione o estado</option><option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option><option>SE</option><option>TO</option></select></label>
+              <label>WhatsApp <span class="required">*</span><input name="whatsapp" type="tel" required maxlength="25" autocomplete="tel" placeholder="(00) 00000-0000"></label>
+              <label>E-mail <span class="required">*</span><input name="email" type="email" required maxlength="180" autocomplete="email" placeholder="contato@suaempresa.com.br"></label>
+              <label>Instagram <span class="optional">opcional</span><input name="instagram" maxlength="150" placeholder="@suaempresa"></label>
+              <label>Site <span class="optional">opcional</span><input name="site" maxlength="200" placeholder="www.suaempresa.com.br"></label>
+              <label>Responsável legal <span class="required">*</span><input name="responsavel" required maxlength="150" autocomplete="name" placeholder="Nome completo"></label>
+              <label>CPF <span class="required">*</span><input name="cpf" inputmode="numeric" required maxlength="14" autocomplete="off" placeholder="000.000.000-00"></label>
+              <label class="full">Cargo <span class="required">*</span><input name="cargo" required maxlength="100" placeholder="Cargo do responsável legal"></label>
+            </div>
+            <div class="upload-wrap"><div><h3>Logotipo da empresa</h3><p>Vamos dar destaque à sua marca.</p></div><label class="upload-zone"><input id="logo" type="file" accept=".png,.jpg,.jpeg,.svg,image/png,image/jpeg,image/svg+xml"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 23H7a6 6 0 0 1-1-12 10 10 0 0 1 19-1 7 7 0 0 1 0 14h-3M16 28V14m-5 5 5-5 5 5"/></svg><strong id="logo-name">Clique para anexar arquivo</strong><small>PNG, JPG ou SVG · até 10 MB · opcional</small></label></div>
+            <div id="logo-info" class="file-info" hidden><img id="logo-preview" alt="Prévia do logotipo anexado"><span id="logo-size"></span><button type="button" id="remove-logo" class="text-button">Remover arquivo</button></div><p id="logo-error" class="error" role="alert"></p>
+          </div></section>
+          <section class="section-card"><div class="section-heading"><span>2</span><h2>PLANO CONTRATADO</h2></div><div class="section-body">
+            <p class="section-intro">Escolha o plano da sua empresa.</p><fieldset class="plan-options"><legend class="sr-only">Plano contratado</legend>
+              <label class="plan blue"><input type="radio" name="plano" value="BLUE" required><img class="plan-logo" src="./assets/plano-blue-3bee747f44aa.png" alt="Logotipo do plano BLUE" width="160" height="160"><span class="plan-top"><span class="plan-dot"></span><strong>BLUE</strong><span class="radio-dot"></span></span><small>PLANO ANUAL</small><span class="plan-price" data-price="BLUE">Valor sob consulta</span><span class="plan-installments" data-installments="BLUE">Vigência de 12 meses</span></label>
+              <label class="plan top"><input type="radio" name="plano" value="TOP"><img class="plan-logo" src="./assets/plano-top-2743cb2341a5.png" alt="Logotipo do plano TOP" width="160" height="160"><span class="plan-top"><span class="plan-dot"></span><strong>TOP</strong><span class="radio-dot"></span></span><small>PLANO ANUAL</small><span class="plan-price" data-price="TOP">Valor sob consulta</span><span class="plan-installments" data-installments="TOP">Vigência de 12 meses</span></label>
+              <label class="plan black"><input type="radio" name="plano" value="BLACK"><img class="plan-logo" src="./assets/plano-black-09d0106dda8f.png" alt="Logotipo do plano BLACK" width="160" height="160"><span class="plan-top"><span class="plan-dot"></span><strong>BLACK</strong><span class="radio-dot"></span></span><small>PLANO ANUAL</small><span class="plan-price" data-price="BLACK">Valor sob consulta</span><span class="plan-installments" data-installments="BLACK">Vigência de 12 meses</span></label>
+            </fieldset>
+            <dl class="financial-grid"><div><dt>Valor único do plano anual</dt><dd id="annual-value">—</dd></div><div><dt>Parcelamento no cartão</dt><dd id="installment-value">12 parcelas —</dd></div><div><dt>Taxa de adesão inicial</dt><dd id="fee-value">—</dd></div><div class="total"><dt>Valor total (plano + adesão)</dt><dd id="total-value">—</dd></div></dl>
+            <div class="field-grid"><label>Data de início <span class="required">*</span><input name="inicio" type="date" required></label><div class="duration"><span class="calendar-icon" aria-hidden="true">▦</span><div><small>VIGÊNCIA DO CONTRATO</small><strong>12 meses</strong></div></div></div>
+          </div></section>
+          <section class="section-card"><div class="section-heading"><span>3</span><h2>CONDIÇÕES DE PAGAMENTO</h2></div><div class="section-body">
+            <div class="payment-block"><span class="payment-symbol" aria-hidden="true">▤</span><div><h3>Plano anual</h3><p><strong>Cartão de crédito — valor único parcelado em 12 vezes.</strong></p><p>A contratação corresponde a um valor único anual, dividido em 12 parcelas no cartão de crédito, não se tratando de mensalidades independentes.</p></div></div>
+            <div class="payment-block adhesion"><span class="payment-symbol" aria-hidden="true">◇</span><div><h3>Taxa de adesão inicial</h3><p>Escolha a forma de pagamento:</p><fieldset class="payment-options"><legend class="sr-only">Pagamento da taxa de adesão</legend><label><input name="pagamentoAdesao" type="radio" value="PIX" required> PIX</label><label><input name="pagamentoAdesao" type="radio" value="BOLETO"> Boleto bancário</label></fieldset><div class="pix-key"><span>Chave PIX (CNPJ)<strong>00.000.000/0000-00</strong></span><button id="copy-pix" type="button" class="text-button">Copiar chave</button></div><p class="muted">A taxa de adesão será cobrada separadamente do valor do plano anual.</p></div></div>
+            <p class="payment-note">Os dados do cartão não são solicitados neste formulário. As instruções de pagamento serão enviadas pela equipe.</p>
+          </div></section>
+          <div class="actions"><span class="action-caption">Próximo passo: leia o termo e assine.</span><button type="button" class="button primary" id="next">CONTINUAR PARA O TERMO <span aria-hidden="true">→</span></button></div>
+        </div>
+        <div id="page-two" hidden>
+          <p class="page-label">PÁGINA 2 <span>TERMO DE ADESÃO E ACEITE CONTRATUAL</span></p>
+          <div class="review-banner"><span aria-hidden="true">✓</span><div><strong>Confira as condições da sua adesão.</strong><p>Leia o termo completo antes de confirmar e assinar.</p></div><button type="button" id="edit-data" class="text-button">Editar cadastro</button></div>
+          <div id="clauses" class="clauses"></div>
+          <section class="section-card"><div class="section-heading"><span>9</span><h2>DECLARAÇÃO DE ACEITE ELETRÔNICO</h2></div><div class="section-body">
+            <label class="acceptance"><input type="checkbox" name="aceite" required><span id="acceptance-text"></span></label>
+            <div class="field-grid"><label>Nome do responsável <span class="required">*</span><input name="nomeAceite" required maxlength="150" autocomplete="name"></label><label>CPF <span class="required">*</span><input name="cpfAceite" required inputmode="numeric" maxlength="14" autocomplete="off"></label><label>Data do aceite<input name="dataAceite" type="date" readonly></label></div>
+            <div class="signature-head"><h3>Assinatura eletrônica <span class="required">*</span></h3><div class="signature-tabs" role="group" aria-label="Forma de assinatura"><button type="button" id="draw-mode" class="selected" aria-pressed="true">Desenhar</button><button type="button" id="type-mode" aria-pressed="false">Digitar</button></div></div>
+            <div id="draw-signature"><p class="muted">Assine com o dedo no celular ou com o mouse.</p><div class="canvas-wrap"><canvas id="signature" width="1000" height="300" aria-label="Área para desenhar assinatura. Use Digitar como alternativa acessível."></canvas><span id="signature-hint">Sua assinatura aqui</span><span class="signature-line"></span></div><button type="button" id="clear-signature" class="text-button">Limpar assinatura</button></div>
+            <label id="typed-signature" hidden>Digite seu nome completo<input name="assinaturaDigitada" maxlength="150" placeholder="Igual ao nome do responsável"><small>O nome digitado será registrado como sua assinatura eletrônica.</small></label>
+            <p id="signature-error" class="error" role="alert"></p>
+            <label class="honeypot" aria-hidden="true" tabindex="-1">Website alternativo<input name="websiteAlternativo" tabindex="-1" autocomplete="off"></label>
+            <p class="privacy-note">Seu cadastro, logotipo e assinatura serão enviados ao Achadinhos do Condomínio para formalizar a adesão. Você receberá uma cópia do termo em PDF no e-mail informado.</p>
+          </div></section>
+          <p id="submit-error" class="error" role="alert"></p>
+          <div class="actions"><button type="button" class="button secondary" id="back">← VOLTAR</button><button type="submit" class="button primary" id="confirm">CONFIRMAR CADASTRO E ADESÃO <span aria-hidden="true">↗</span></button></div>
+        </div>
+      </form>
+      <aside class="summary" aria-label="Resumo da contratação"><div class="summary-head"><span class="eyebrow">SUA ADESÃO</span><h2>Uma boa conexão<br>começa aqui.</h2><div class="summary-rule"></div></div><div class="summary-body"><span class="summary-label">PLANO ESCOLHIDO</span><strong class="summary-plan" id="summary-plan">Selecione seu plano</strong><dl><div><dt>Plano anual</dt><dd id="summary-annual">—</dd></div><div><dt>Adesão inicial</dt><dd id="summary-fee">—</dd></div><div class="summary-total"><dt>Valor total</dt><dd id="summary-total">—</dd></div></dl><p id="summary-installments" class="summary-installments">Plano anual em 12 parcelas no cartão</p><div class="summary-foot"><span aria-hidden="true">▦</span><span>Vigência de <strong>12 meses</strong><small>Adesão paga à parte por PIX ou boleto.</small></span></div></div><div class="summary-help">Ficou com alguma dúvida?<a href="https://wa.me/5519993882224" target="_blank" rel="noopener noreferrer">Fale com nossa equipe ↗</a></div></aside>
+    </div>
+    <section id="success" class="success" hidden aria-live="polite"><span class="success-check" aria-hidden="true">✓</span><p class="eyebrow">ACHADINHOS DO CONDOMÍNIO</p><h2>Cadastro e adesão registrados!</h2><p id="success-message"></p><p class="receipt-id" id="receipt-id"></p><div class="success-actions"><button class="button primary" type="button" id="download-pdf">BAIXAR TERMO EM PDF ↓</button></div><p id="download-error" class="error" role="alert"></p><p class="muted">As instruções de pagamento serão enviadas pela equipe. A confirmação do cadastro não realiza cobranças.</p></section>
+  </main>
+  <footer><strong>ACHADINHOS DO CONDOMÍNIO</strong><span>Conectando empresas. Criando oportunidades.</span><a href="mailto:grupomf7@gmail.com">grupomf7@gmail.com</a></footer>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <noscript><p class="notice">Ative o JavaScript para preencher e enviar o cadastro.</p></noscript>
+</body></html>

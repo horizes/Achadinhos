@@ -1,21 +1,13 @@
-<!doctype html><html lang="pt-BR"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#011743"><title>Administração | Achadinhos do Condomínio</title>
-<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css?v=20261010-logos2"><script src="./config.js?v=20261010-logos2" defer></script><script src="./core.js?v=20261010-logos2" defer></script><script src="./api.js?v=20261010-logos2" defer></script><script src="./demo.js?v=20261010-logos2" defer></script><script src="./admin.js?v=20261010-logos2" defer></script></head><body>
-<header class="hero"><div class="hero-inner"><div class="topline"><span>ACHADINHOS DO CONDOMÍNIO</span><span>ACESSO ADMINISTRATIVO</span></div><div class="hero-content"><div class="brand-mark" role="img" aria-label="Logotipo Achadinhos do Condomínio"><img src="./assets/logo-transparente.png" alt="" width="1254" height="1254"></div><div class="hero-title"><p class="eyebrow">GESTÃO DE PLANOS E CADASTROS</p><h1>PAINEL <span>ADMINISTRATIVO</span></h1><p>Atualize os planos. Compartilhe o link. Acompanhe as adesões.</p></div></div></div></header>
-<main class="admin-container">
-<div class="notice" id="admin-notice" hidden role="status"></div>
-<section id="login-section" class="section-card admin-login"><div class="section-heading"><span aria-hidden="true">→</span><h2>ENTRAR NO PAINEL</h2></div><form class="section-body" id="login-form"><p>Área exclusiva para administrar os planos e os cadastros.</p><label>Senha de administrador<input name="password" type="password" required autocomplete="current-password" maxlength="256" placeholder="Digite sua senha"></label><button type="submit" class="button primary" id="login">ENTRAR</button><p class="error" id="login-error" role="alert"></p></form></section>
-<div id="dashboard" hidden>
-  <div class="admin-title"><div><h1>Seu painel de gestão</h1><p>As alterações abaixo valem para todos os novos cadastros.</p></div><button type="button" class="button secondary" id="logout">SAIR</button></div>
-  <section class="admin-section"><h2>Planos e valores</h2><p>Defina o valor anual e a taxa de adesão de cada plano. O parcelamento é sempre em 12 vezes no cartão.</p>
-    <form id="plans-form"><div class="admin-plans" id="admin-plans"></div><div class="admin-actions"><button class="button primary" type="submit" id="save-plans">SALVAR PARA TODOS</button><span class="admin-status" id="save-status" role="status"></span></div><p class="error" id="save-error" role="alert"></p></form>
-    <p class="admin-warning">Contratos já registrados preservam os valores aceitos. Uma alteração de preço exige um novo aceite de quem ainda está preenchendo o cadastro.</p>
-  </section>
-  <section class="admin-section"><h2>Gerar link de cadastro</h2><p>Envie um único link pelo WhatsApp. A cliente preenche os dados, lê o termo e assina pelo celular.</p>
-    <div class="link-controls"><label>Endereço público do site<input id="site-url" type="url" placeholder="https://seu-usuario.github.io/seu-repositorio/"></label><label>Plano pré-selecionado<select id="link-plan"><option value="">Cliente escolhe o plano</option><option value="BLUE">BLUE</option><option value="TOP">TOP</option><option value="BLACK">BLACK</option></select></label></div>
-    <div class="generated-link"><input id="generated-link" readonly aria-label="Link gerado para cadastro"><button class="button primary" type="button" id="copy-link">COPIAR LINK</button><a id="share-link" class="button secondary" target="_blank" rel="noopener noreferrer" href="https://wa.me/">WHATSAPP ↗</a></div><p class="link-note">O link acompanha os valores atuais dos planos. A página de cadastro não exibe acesso a este painel.</p><p class="error" id="link-error" role="alert"></p>
-  </section>
-  <section class="admin-section"><div class="admin-title"><div><h2>Cadastros recentes</h2><p>Os últimos 20 registros, com acesso ao PDF e status do envio.</p></div><button class="text-button" type="button" id="refresh">Atualizar</button></div><div class="table-scroll"><table class="admin-receipts"><thead><tr><th>Data</th><th>Empresa</th><th>Plano</th><th>E-mail</th><th>Termo</th><th>Envio</th></tr></thead><tbody id="receipts"></tbody></table></div><p id="receipts-empty" class="admin-empty">Nenhum cadastro registrado.</p><p class="error" id="receipts-error" role="alert"></p></section>
-  <p class="admin-help">O PDF e os dados dos clientes ficam no Google Drive e na planilha da conta que ativou o serviço. A senha e a sessão são verificadas pelo servidor. Os valores são armazenados centralmente.</p>
-</div></main><footer><strong>ACHADINHOS DO CONDOMÍNIO</strong><span>Administração de planos e adesões</span></footer><div class="toast" id="toast" role="status" hidden></div>
-</body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="refresh" content="0;url=./index.html">
+  <title>Administração | Achadinhos do Condomínio</title>
+</head>
+<body>
+  <p>O painel administrativo está na página inicial. <a href="./index.html">Abrir painel</a>.</p>
+</body>
+</html>

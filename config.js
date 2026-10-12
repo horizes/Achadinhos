@@ -2,7 +2,7 @@
 window.ACHADINHOS_CONFIG = Object.freeze({
   demoMode: true, // Teste com senha 123456. Desative ao configurar o servidor real.
   apiUrl: "", // Cole aqui a URL /exec do Google Apps Script depois de ativá-lo.
-  siteUrl: "", // Opcional: https://SEU-USUARIO.github.io/SEU-REPOSITORIO/
+  siteUrl: "", // Opcional: https://SEU-USUARIO.github.io/SEU-REPOSITORIO/cadastro.html
   whatsapp: "5519993882224",
   email: "grupomf7@gmail.com"
 });
